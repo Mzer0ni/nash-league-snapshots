@@ -1,6 +1,6 @@
 on:
   workflow_dispatch:
-name: Scrape Data
+name: Scrape Manual
 jobs:
   build:
     name: Build
