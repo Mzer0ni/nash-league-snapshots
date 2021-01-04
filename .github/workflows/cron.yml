@@ -1,7 +1,7 @@
+name: Scrape Data
 on:
   schedule:
     - cron:  '0 */12 * * *' # Every 12 hours. Ref https://crontab.guru/examples.html
-name: Scrape Data
 jobs:
   build:
     name: Build
