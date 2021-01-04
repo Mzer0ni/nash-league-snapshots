@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "fs": "^0.0.1-security",
+    "graphql": "^15.4.0",
     "graphql-request": "^3.4.0",
     "path": "^0.12.7"
   }

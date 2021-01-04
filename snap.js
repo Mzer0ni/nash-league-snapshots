@@ -1,4 +1,4 @@
-const gql = require('graphql-request')
+const {gql, request} = require('graphql-request')
 const fs = require('fs');
 const path = require('path');
 
@@ -14,7 +14,7 @@ if (fs.existsSync(pathToData)) {
 async function main() {
   const endpoint = 'https://app.nash.io/api/graphql/explore'
 
-  const query = gql.gql`
+  const query = gql`
   query league($competitionId: ID!, $type: SoloRankingType!) {
     listCompetitions {
       id
@@ -103,7 +103,7 @@ async function main() {
     type: 'TOTAL_VOLUME'
   }
 
-  const rdata = await gql.request(endpoint, query, variables)
+  const rdata = await request(endpoint, query, variables)
   data.push(rdata)
 }
 
