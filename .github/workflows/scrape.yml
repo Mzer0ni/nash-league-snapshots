@@ -1,3 +1,4 @@
+name: "Run cron"
 on:
   schedule:
     - cron:  '*/5 * * * *' # Every 5 mins. Ref https://crontab.guru/examples.html
