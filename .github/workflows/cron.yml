@@ -1,5 +1,6 @@
 name: Scrape Data
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 */12 * * *' # Every 12 hours. Ref https://crontab.guru/examples.html
 jobs:
